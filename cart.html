@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SciFY - The Science Journal</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/small-business.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/style.css">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">SciFY</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="journals.html">Journals</a>
+          </li>
+
+          <li class="nav-item" active>
+            <a class="nav-link" href="subscriptions.html">Subscription</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0">
+          <button class="btn btn-warning my-2 my-sm-0" type="submit"> <a href="login.html">Login</a></button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-10 col-11 mx-auto">
+        <div class="row mt-5 gx-3">
+          <!-- left side div -->
+          <div class="col-md-12 col-lg-8 col-11 mx-auto main_cart mg-lg-0 mb-5">
+            <div class="card p-4">
+              <h2 class="py-4 font-weight-bold">Cart (1 items)</h2>
+              <div class="row">
+                <!-- cart images div -->
+                <div
+                  class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+                  <img src="img/shirt1.jpg" class="img-fluid" alt="cart img">
+                </div>
+                <!-- cart product details -->
+                <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                  <div class="row">
+                    <!-- product name -->
+                    <div class="col-6 card-title">
+                      <h1 class="mb-4 product_name">Black Zara Shirt</h1>
+                      <p class="mb-2">SHIRT - BLUE</p>
+                      <p class="mb-2">COLOR - BLUE</p>
+                      <p class="mb-2">SIZE - M</p>
+                    </div>
+                    <!-- quantity inc dec -->
+                    <div class="col-6">
+                      <ul class="pagination justify-content-end set_quantity">
+                        <li class="page-item">
+                          <button class="page-link" onclick="decreaseNumber('textbox', 'itemval')"> <i
+                              class="fas fa-minus"></i>
+                          </button>
+                        </li>
+                        <li class="page-item">
+                          <input type="text" name="" class="page-link" value="0" id="textbox">
+                        </li>
+                        <li class="page-item">
+                          <button class="page-link" onclick="increaseNumber('textbox', 'itemval')"> <i
+                              class="fas fa-plus"></i>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- remove move and price -->
+                  <div class="row">
+                    <div class="col-8 d-flex justify-content-between remove_wish">
+                      <p><i class="fas fa-trash-alt"></i> REMOVE ITEM</p>
+                      <p><i class="fas fa-heart"></i> MOVE TO WISHLIST</p>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end price_money">
+                      <h3>$<span id="itemval"> 0.00</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+          </div>
+          <!-- right side div -->
+          <div class="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5">
+            <div class="right_side p-3 shadow bg-white">
+              <h2 class="product_name mb-5">The Total Amount Of</h2>
+              <div class="price_indiv d-flex justify-content-between">
+                <p>Product Amount</p>
+                <p>$<span id="product_total_amt">0.00</span></p>
+              </div>
+              <div class="price_indiv d-flex justify-content-between">
+                <p>Shipping Charges</p>
+                <p>$<span id="shipping_charge">50.00</span></p>
+              </div>
+              <hr />
+              <div class="total-amt d-flex justify-content-between font-weight-bold">
+                <p>The total amount of (including GST)</p>
+                <p>$<span id="total_cart_amt">0.00</span></p>
+              </div>
+              <button class="btn btn-primary text-uppercase">Checkout</button>
+            </div>
+            <!-- discout code -->
+
+            <!-- discount code ends -->
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Taurus Hard Soft Solutions 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+
+
+  <script type="text/javascript">
+
+    var product_total_amt = document.getElementById('product_total_amt');
+    var shipping_charge = document.getElementById('shipping_charge');
+    var total_cart_amt = document.getElementById('total_cart_amt');
+
+    var discountCode = document.getElementById('discount_code1');
+
+    const decreaseNumber = (incdec, itemprice) => {
+      var itemval = document.getElementById(incdec);
+      var itemprice = document.getElementById(itemprice);
+      // console.log(itemval.value);
+      if (itemval.value <= 0) {
+        itemval.value = 0;
+        alert('negative quantity not allowed');
+      } else {
+        itemval.value = parseInt(itemval.value) - 1;
+        itemval.style.background = '#fff';
+        itemval.style.color = '#000';
+        itemprice.innerHTML = parseInt(itemprice.innerHTML) - 15;
+        product_total_amt.innerHTML = parseInt(product_total_amt.innerHTML) - 15;
+        total_cart_amt.innerHTML = parseInt(product_total_amt.innerHTML) + parseInt(shipping_charge.innerHTML);
+      }
+    }
+
+    const increaseNumber = (incdec, itemprice) => {
+      var itemval = document.getElementById(incdec);
+      var itemprice = document.getElementById(itemprice);
+      // console.log(itemval.value);
+      if (itemval.value >= 5) {
+        itemval.value = 5;
+        alert('max 5 allowed');
+        itemval.style.background = 'red';
+        itemval.style.color = '#fff';
+      } else {
+        itemval.value = parseInt(itemval.value) + 1;
+        itemprice.innerHTML = parseInt(itemprice.innerHTML) + 15;
+        product_total_amt.innerHTML = parseInt(product_total_amt.innerHTML) + 15;
+        total_cart_amt.innerHTML = parseInt(product_total_amt.innerHTML) + parseInt(shipping_charge.innerHTML);
+      }
+    }
+
+    const discount_code = () => {
+      let totalamtcurr = parseInt(total_cart_amt.innerHTML);
+      let error_trw = document.getElementById('error_trw');
+      if (discountCode.value === 'ASDFGH') {
+        let newtotalamt = totalamtcurr - 15;
+        total_cart_amt.innerHTML = newtotalamt;
+        error_trw.innerHTML = "Hurray! Discount Added.";
+      } else {
+        error_trw.innerHTML = "Try Again! Invalid Code.";
+      }
+    }
+
+  </script>
+
+
+</body>
+
+</html>
